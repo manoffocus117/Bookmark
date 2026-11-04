@@ -1,20 +1,21 @@
 header {
-            nav {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        align-items: center;
-            }
+      padding: 1.5rem 0;
+      .navbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0px;
+            width: 100%;
             .logo {
-                        max-width: 150px;
+                  width: 10rem;
             }
             .nav-menu {
-                        ul {
-                                    display: flex;
-                                    flex-direction: row;
-                                    gap: 50px;
-                                    justify-content: center;
-                                    align-items: center;
-                        }
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: space-between;
+                  gap: 2rem;
             }
+      }
 }

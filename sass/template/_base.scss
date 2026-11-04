@@ -1,33 +1,34 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
 }
 body {
-            height: 100vh;
-            width: 100vw;
-}
-nav {
-            padding: 10px 0px;
+      width: 80rem;
+      margin: auto;
 }
 section {
-            padding: 100px 0px;
+      padding: 100px 0px;
 }
 
 img {
-            width: 100%;
+      width: 100%;
 }
-ul li {
-            list-style: none;
+
+li {
+      list-style: none;
 }
+
 a {
-            text-decoration: none;
+      text-decoration: none;
 }
+
 button {
-            background: none;
-            border: none;
-            cursor: pointer;
+      background: none;
+      border: none;
+      cursor: pointer;
 }
+
 footer {
-            padding: 10px 0px;
+      padding: 10px 0px;
 }
