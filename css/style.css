@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ header nav {
   align-items: center;
 }
 header .logo {
-  max-width: 100px;
+  max-width: 150px;
 }
 header .nav-menu ul {
   display: flex;
@@ -61,11 +62,16 @@ header .nav-menu ul {
 }
 
 h1, h2, h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
 }
 
 h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+a, p, li, button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
