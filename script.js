@@ -1,7 +1,7 @@
 const navbar = document.getElementById("navbar");
 
 function handle_scroll() {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
             navbar.classList.add("scrolled");
       } else {
             navbar.classList.remove("scrolled");
