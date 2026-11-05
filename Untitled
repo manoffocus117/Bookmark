@@ -1,5 +1,0 @@
-const handle_scroll = () => {
-                  set_is_scrolled(window.scrollY > 50);
-            };
-            window.addEventListener("scroll", handle_scroll);
-            return () => window.removeEventListener("scroll", handle_scroll);

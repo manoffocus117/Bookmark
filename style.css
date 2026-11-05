@@ -130,12 +130,32 @@ button {
       gap: 2rem;
 }
 
-.fa-bars-staggered,
-.fa-xmark {
+.fa-xmark,
+.fa-bars-staggered {
+      font-size: 1.75rem;
+}
+
+.hidden {
       display: none;
 }
 
 .mobile-menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 3.75rem;
+      left: 0;
+      z-index: 999;
+      background: var(--grayish-blue);
+      transition: all 1s ease;
+}
+
+#open-menu {
       display: none;
 }
 
@@ -159,24 +179,7 @@ button {
             display: none;
       }
 
-      .fa-bars-staggered,
-      .fa-xmark {
+      #open-menu {
             display: block;
-            font-size: 1.75rem;
-      }
-
-      .mobile-menu {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top: 3.75rem;
-            left: 0;
-            z-index: 999;
-            background: var(--grayish-blue);
       }
 }
