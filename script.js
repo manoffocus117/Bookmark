@@ -2,6 +2,8 @@ const navbar = document.getElementById("navbar");
 const open_menu = document.getElementById("open-menu");
 const close_menu = document.getElementById("close-menu");
 const mobile_menu = document.getElementById("mobile-menu");
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabContents = document.querySelectorAll(".tab-content");
 
 function handle_scroll() {
       if (window.scrollY > 50) {
@@ -26,4 +28,16 @@ close_menu.addEventListener("click", () => {
 
       close_menu.classList.add("hidden");
       open_menu.classList.remove("hidden");
+});
+
+tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+            // 1. hide everything / reset all buttons
+            tabBtns.forEach((b) => b.classList.remove("active"));
+            tabContents.forEach((c) => c.classList.remove("active"));
+
+            // 2. show the clicked tab's content
+            btn.classList.add("active");
+            document.getElementById(btn.dataset.target).classList.add("active");
+      });
 });
