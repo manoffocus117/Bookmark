@@ -194,6 +194,11 @@ main {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      /* overflow-x: clip; */
+}
+
+.hero-desc {
+      flex: 1;
 }
 
 .hero-desc,
@@ -201,6 +206,31 @@ main {
       width: 50%;
       display: flex;
       flex-direction: column;
+}
+
+.hero-img {
+      flex: 1;
+      position: relative; /* anchor for the blue shape */
+      z-index: 1;
+}
+
+.hero-img img {
+      width: 100%;
+      display: block;
+      position: relative; /* keeps the image above the shape */
+      z-index: 2;
+}
+
+.hero-img::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 40%; /* starts partway down the tablet */
+      bottom: -10%; /* sticks out below the tablet */
+      left: 25%; /* where the curve begins */
+      right: -50vw; /* pushes it off the right edge of the screen */
+      background-color: hsl(231, 69%, 60%);
+      border-bottom-left-radius: 200px;
 }
 
 .hero-title {
