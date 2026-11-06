@@ -48,6 +48,13 @@ section {
       margin: 6.25rem auto;
 }
 
+h1,
+h2,
+h3 {
+      font-size: 3rem;
+      color: var(--very-dark-blue);
+}
+
 a {
       text-decoration: none;
       color: inherit;
@@ -66,7 +73,8 @@ video {
 }
 
 p {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
+      color: var(--grayish-blue);
 }
 
 li {
@@ -199,6 +207,11 @@ main {
 
 .hero-desc {
       flex: 1;
+      gap: 2rem;
+}
+
+.hero-desc p {
+      line-height: 2.25rem;
 }
 
 .hero-desc,
@@ -219,6 +232,8 @@ main {
       display: block;
       position: relative; /* keeps the image above the shape */
       z-index: 2;
+      margin-left: 2.5rem;
+      margin-top: 3rem;
 }
 
 .hero-img::before {
@@ -231,16 +246,6 @@ main {
       right: -50vw; /* pushes it off the right edge of the screen */
       background-color: hsl(231, 69%, 60%);
       border-bottom-left-radius: 200px;
-}
-
-.hero-title {
-      font-size: 3rem;
-      color: var(--very-dark-blue);
-}
-
-.hero-desc p {
-      font-size: 1.5rem;
-      color: var(--grayish-blue);
 }
 
 .hero-button {
@@ -265,6 +270,19 @@ main {
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
       color: var(--grayish-blue);
       border-radius: var(--radius);
+}
+
+.features-text {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 45rem;
+      margin: auto;
+      text-align: center;
+}
+
+.features-text p {
+      line-height: 2.25rem;
 }
 
 /* Mobile devices */
@@ -313,6 +331,11 @@ main {
       .hero-img {
             width: 100%;
             gap: 2rem;
+      }
+
+      .hero-img img {
+            margin-top: 0;
+            margin-left: 0;
       }
 
       .hero-desc {
