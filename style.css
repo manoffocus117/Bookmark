@@ -201,7 +201,6 @@ main {
       width: 50%;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
 }
 
 .hero-title {
@@ -232,7 +231,7 @@ main {
 
 .firefox-button {
       background: var(--text-color);
-      padding: 0.75rem 1.5rem;
+      padding: 0.75rem 1.73rem;
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
       color: var(--grayish-blue);
       border-radius: var(--radius);
@@ -245,7 +244,6 @@ main {
             margin: auto;
       }
 
-      main,
       section {
             background: var(--soft-blue);
       }
@@ -274,5 +272,33 @@ main {
 
       .login-button {
             width: 20rem;
+      }
+
+      main {
+            flex-direction: column;
+            gap: 2rem;
+      }
+
+      .hero-desc,
+      .hero-img {
+            width: 100%;
+            gap: 2rem;
+      }
+
+      .hero-desc {
+            gap: 1rem;
+      }
+
+      .hero-title {
+            font-size: 2.15rem;
+      }
+
+      .hero-desc p {
+            font-size: 1.25rem;
+      }
+
+      .hero-button {
+            width: 100%;
+            flex-direction: column;
       }
 }
