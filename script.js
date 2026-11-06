@@ -14,20 +14,16 @@ function handle_scroll() {
 window.addEventListener("scroll", handle_scroll, { passive: true });
 handle_scroll();
 
-open_menu.addEventListener(
-      "click",
-      (handle_open_menu = () => {
-            mobile_menu.style.display = "flex";
-            open_menu.style.display = "none";
-            close_menu.classList.remove("hidden");
-      }),
-);
+open_menu.addEventListener("click", () => {
+      mobile_menu.classList.add("active");
 
-close_menu.addEventListener(
-      "click",
-      (handle_open_menu = () => {
-            mobile_menu.style.display = "none";
-            close_menu.classList.add("hidden");
-            open_menu.style.display = "block";
-      }),
-);
+      open_menu.classList.add("hidden");
+      close_menu.classList.remove("hidden");
+});
+
+close_menu.addEventListener("click", () => {
+      mobile_menu.classList.remove("active");
+
+      close_menu.classList.add("hidden");
+      open_menu.classList.remove("hidden");
+});

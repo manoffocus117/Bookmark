@@ -159,9 +159,14 @@ button {
       display: none;
 }
 
+.mobile-menu {
+      display: none;
+}
+
+/* Mobile devices */
 @media only screen and (max-width: 28rem) {
       body {
-            width: 24rem;
+            width: 22.5rem;
             margin: 0 1rem;
       }
 
@@ -171,7 +176,8 @@ button {
       }
 
       .inner-nav {
-            width: 24rem;
+            width: 22.5rem;
+            margin: auto;
             background: var(--soft-red);
       }
 
@@ -181,5 +187,14 @@ button {
 
       #open-menu {
             display: block;
+      }
+
+      .mobile-menu.active {
+            display: flex;
+      }
+
+      #open-menu.hidden,
+      #close-menu.hidden {
+            display: none;
       }
 }
