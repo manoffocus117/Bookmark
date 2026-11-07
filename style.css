@@ -461,23 +461,18 @@ main {
 .newsletter {
       background-color: var(--soft-blue);
       width: 100%;
+      margin-bottom: 0;
       padding: 10rem 0;
       color: #ffffff;
 }
 
-.newsletter-text {
-      width: 45%;
-      margin: auto;
-      text-align: center;
-}
-
-.input-group {
-      width: 45%;
-      margin: auto;
-}
-
 .fs-6 {
       letter-spacing: 10px;
+}
+
+footer {
+      background: var(--very-dark-blue);
+      padding: 5rem 0;
 }
 
 /* Mobile devices */
