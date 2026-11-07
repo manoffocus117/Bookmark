@@ -34,9 +34,6 @@ html {
 }
 
 body {
-      width: 80rem;
-      height: 100%;
-      margin: auto;
       overflow-x: hidden;
       font-family: "Rubik", sans-serif;
 }
@@ -459,6 +456,28 @@ main {
 .more-info {
       width: 10rem;
       margin: 3rem auto;
+}
+
+.newsletter {
+      background-color: var(--soft-blue);
+      width: 100%;
+      padding: 10rem 0;
+      color: #ffffff;
+}
+
+.newsletter-text {
+      width: 45%;
+      margin: auto;
+      text-align: center;
+}
+
+.input-group {
+      width: 45%;
+      margin: auto;
+}
+
+.fs-6 {
+      letter-spacing: 10px;
 }
 
 /* Mobile devices */
