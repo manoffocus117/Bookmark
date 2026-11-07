@@ -428,8 +428,19 @@ main {
       margin-top: 10rem;
 }
 
+.faq-text {
+      width: 60%;
+      margin: 5rem auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+}
+
 .accordion-flush {
-      width: 50%;
+      width: 60%;
       margin: auto;
 }
 
