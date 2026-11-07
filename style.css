@@ -444,6 +444,23 @@ main {
       margin: auto;
 }
 
+.accordion-button:focus {
+      box-shadow: none;
+      border-color: transparent; /* optional: removes the border color change */
+      outline: none; /* optional */
+}
+
+.accordion-button:not(.collapsed) {
+      background-color: transparent;
+      color: inherit;
+      box-shadow: none;
+}
+
+.more-info {
+      width: 10rem;
+      margin: 3rem auto;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 28rem) {
       body {
