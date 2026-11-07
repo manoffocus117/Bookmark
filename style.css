@@ -428,6 +428,11 @@ main {
       margin-top: 10rem;
 }
 
+.accordion-flush {
+      width: 50%;
+      margin: auto;
+}
+
 /* Mobile devices */
 @media only screen and (max-width: 28rem) {
       body {
