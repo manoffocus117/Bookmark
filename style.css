@@ -482,10 +482,6 @@ footer {
             margin: auto;
       }
 
-      section {
-            background: var(--soft-blue);
-      }
-
       .inner-nav {
             width: 21rem;
             margin: auto;
@@ -543,5 +539,13 @@ footer {
       .hero-button {
             width: 100%;
             flex-direction: column;
+      }
+
+      .tab-content {
+            grid-template-columns: 100%;
+      }
+
+      .tab-img::before {
+            bottom: -5%;
       }
 }
