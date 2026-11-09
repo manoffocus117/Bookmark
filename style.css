@@ -548,4 +548,8 @@ footer {
       .tab-img::before {
             bottom: -5%;
       }
+
+      .fs-6 {
+            letter-spacing: 0;
+      }
 }
